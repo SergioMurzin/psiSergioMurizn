@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			$("#Hide").click(function(){
+				$("#Text").hide(1000);
+			});
+			$("#Show").click(function(){
+				$("#Text").show(1000);
+			});
+			$("#Toggle").click(function(){
+				$("#Text").toggle(1000);
+			});
+		});
+
+	</script>
+	<title></title>
+</head>
+<body>
+	<button id="Hide">
+		Hide
+	</button>
+	<button id="Show">
+		Show
+	</button>
+	<button id="Toggle">
+		Toggle
+	</button>
+	<form id="Text">
+		I will hide after click
+	</form>
+</body>
+</html>
